@@ -5,7 +5,6 @@
       <input v-model="user.username" id="username" type="text" />
       <label for="password">Password</label>
       <input v-model="user.password" id="password" type="text" />
-      <!-- <button @click="login" :disabled="!user.username || !user.password">Login</button> -->
       <NuxtLink to="/profile" class="button">Login</NuxtLink>
     </form>
   </div>
