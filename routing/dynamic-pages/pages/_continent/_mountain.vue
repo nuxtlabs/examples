@@ -24,7 +24,7 @@ export default {
         mountain: filteredMountain.title
       }
     } else {
-      redirect('/mountains?error=param')
+      redirect('/')
     }
   }
 }

@@ -29,7 +29,8 @@ body {
   margin: 0;
 }
 
-a {
+a,
+a:visited {
   color: var(--primary-color);
   text-decoration: none;
 }
