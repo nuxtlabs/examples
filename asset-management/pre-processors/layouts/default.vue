@@ -1,6 +1,5 @@
 <template>
   <div>
-    <TheHeader />
     <main>
       <img src="~/assets/logo.svg" />
       <Nuxt />
