@@ -12,7 +12,7 @@
 </template>
 <script>
 export default {
-  layout: 'profile',
+  layout: 'profile'
 }
 </script>
 <style scoped>

@@ -2,9 +2,9 @@
   <div>
     <form @submit.prevent>
       <label for="username">Username</label>
-      <input v-model="user.username" id="username" type="text">
+      <input v-model="user.username" id="username" type="text" />
       <label for="password">Password</label>
-      <input v-model="user.password" id="password" type="text">
+      <input v-model="user.password" id="password" type="text" />
       <!-- <button @click="login" :disabled="!user.username || !user.password">Login</button> -->
       <NuxtLink to="/profile" class="button">Login</NuxtLink>
     </form>
@@ -13,14 +13,14 @@
 <script>
 export default {
   layout: 'auth',
-data () {
+  data() {
     return {
       user: {
         username: '',
         password: ''
       }
     }
-  },
+  }
 }
 </script>
 <style scoped>
@@ -34,8 +34,6 @@ div {
 form {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 label {
@@ -48,7 +46,7 @@ input {
   font-size: 16px;
   padding: 0.75rem 1rem;
   margin: 0 0.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   border: 1px solid #dedede;
   border-radius: 0.5rem;
   box-shadow: none;
@@ -61,7 +59,7 @@ input {
 
 .button[disabled] {
   cursor: default;
-  opacity: .5;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 .button {
