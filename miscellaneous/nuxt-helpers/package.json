@@ -1,0 +1,13 @@
+{
+  "name": "my-nuxt-project",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt build && export"
+  },
+  "dependencies": {
+    "@nuxt/http": "^0.5.7",
+    "nuxt": "^2.14.5"
+  }
+}

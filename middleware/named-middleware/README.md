@@ -1,0 +1,1 @@
+[Directory Structure Book - Named Middleware](https://nuxtjs.org/docs/2.x/directory-structure/middleware#named-middleware)

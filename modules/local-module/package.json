@@ -1,0 +1,13 @@
+{
+  "name": "my-nuxt-project",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "ngrok": "^3.3.0",
+    "nuxt": "^2.14.5"
+  }
+}
