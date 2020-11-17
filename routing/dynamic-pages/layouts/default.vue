@@ -29,9 +29,11 @@ body {
   margin: 0;
 }
 
-a,
-a:visited {
-  color: var(--primary-color);
+a {
+  color: inherit;
+  text-decoration: none;
+}
+nav a:hover {
   text-decoration: none;
 }
 
@@ -66,5 +68,8 @@ li {
 
 nav {
   padding: 0 1rem;
+}
+a.nuxt-link-exact-active {
+  color: #00c58e;
 }
 </style>
