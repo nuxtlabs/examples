@@ -56,4 +56,27 @@ li {
 nav {
   padding: 0 1rem;
 }
+button,
+.button {
+  background: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  letter-spacing: 0.5px;
+  margin: 0 0.5rem;
+}
+
+button:hover,
+.button:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  opacity: 0.8;
+}
 </style>
