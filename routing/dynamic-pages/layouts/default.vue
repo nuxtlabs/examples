@@ -39,10 +39,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a.nuxt-link-exact-active {
-  color: black;
-}
-
 main {
   margin: 0 auto;
   margin-top: 100px;
