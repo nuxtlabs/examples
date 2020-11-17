@@ -5,7 +5,7 @@
     <ul>
       <li v-for="mountain in mountains" :key="mountain.title">
         <NuxtLink
-          :to="{ name: 'mountain-slug', params: { slug: mountain.slug } }"
+          :to="{ name: 'mountains-slug', params: { slug: mountain.slug } }"
         >
           {{ mountain.title }}
         </NuxtLink>

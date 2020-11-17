@@ -45,6 +45,7 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 li {
   margin: 0 0.5rem;
