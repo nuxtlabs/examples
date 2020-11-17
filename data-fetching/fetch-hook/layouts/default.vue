@@ -30,6 +30,7 @@ a:hover {
 main {
   margin: 0 auto;
   padding: 0 1rem;
+  margin-top: 40px;
   max-width: 1280px;
   text-align: center;
 }

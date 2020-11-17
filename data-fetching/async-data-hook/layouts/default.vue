@@ -29,7 +29,7 @@ a:hover {
 
 main {
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 40px;
   padding: 0 1rem;
   max-width: 1280px;
   text-align: center;
