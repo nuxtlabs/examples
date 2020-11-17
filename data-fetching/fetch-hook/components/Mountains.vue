@@ -1,40 +1,40 @@
 <template>
-<div>
+  <div>
     <p v-if="$fetchState.pending">
-      <span class="loading"></span></p>
-    <p v-else-if="$fetchState.error">Error while fetching posts 🤬</p>
+      <span class="loading"></span>
+    </p>
+    <p v-else-if="$fetchState.error">Error while fetching mountains 🤬</p>
     <ul v-else>
-        <li v-for="(post, index) in posts" :key="index.id">
-            <NuxtLink :to="{ name: 'posts-id', params: { id: post.id } }">{{ post.title }}</NuxtLink>
-        </li>
+      <li v-for="mountain in mountains" :key="mountain.title">
+        <NuxtLink
+          :to="{ name: 'mountains-slug', params: { slug: mountain.slug } }"
+        >
+          {{ mountain.title }}
+        </NuxtLink>
+      </li>
     </ul>
     <button @click="$fetch">Refresh Data</button>
-</div>
+  </div>
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
-      posts: []
+      mountains: []
     }
   },
   activated() {
     if (this.$fetchState.timestamp <= Date.now() - 30000) {
-      this.$fetch();
+      this.$fetch()
     }
   },
 
-  async fetch () {
-      this.posts = await this.$http.$get('https://api.nuxtjs.dev/posts') 
-  },
+  async fetch() {
+    this.mountains = await this.$http.$get('https://api.nuxtjs.dev/mountains')
+  }
 }
 </script>
 <style scoped>
-ul {
-  list-style: none;
-  text-align: left;
-  padding: 0 1rem;
-}
 li {
   margin-bottom: 0.5rem;
 }
