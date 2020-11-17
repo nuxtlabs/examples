@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>Having fun with Nuxt.js</h1>
+    <h1>Slide Transition</h1>
+    <p>slide-bottom page transition</p>
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'fun',
   transition: 'slide-bottom'
 }
 </script>
