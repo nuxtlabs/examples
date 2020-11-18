@@ -6,7 +6,7 @@
     </h2>
     <ul v-for="mountain in mountains" :key="mountain.slug">
       <li>
-        <NuxtLink :to="`mountains/${mountains.slug}`">{{
+        <NuxtLink :to="`mountains/${mountain.slug}`">{{
           mountain.title
         }}</NuxtLink>
       </li>

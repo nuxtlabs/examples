@@ -32,7 +32,7 @@ a.nuxt-link-exact-active {
 
 main {
   margin: 0 auto;
-  margin-top: 25vh;
+  margin-top: 100px;
   margin-bottom: 2rem;
   padding: 0 1rem;
   max-width: 1280px;
