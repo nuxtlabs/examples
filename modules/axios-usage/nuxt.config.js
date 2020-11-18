@@ -1,31 +1,16 @@
 export default {
-    /*
-    ** Activate components - https://nuxtjs.org/docs/2.x/directory-structure/components#components-module
-    */
-    components: true,
+  /*
+   ** Runtime Config
+   */
 
-    /*
-    ** Global CSS - https://nuxtjs.org/docs/2.x/features/configuration#pre-processors
-    */
-    css: [
-        '~/assets/main.css'
-    ],
+  publicRuntimeConfig: {
+    axios: {
+      baseURL: 'https://api.nuxtjs.dev'
+    }
+  },
 
-    /*
-    ** Runtime Config
-    */
-
-   publicRuntimeConfig: {
-        axios: {
-            baseURL: "https://api.nuxtjs.dev"
-        }
-    },
-
-    /*
-    ** Modules - https://nuxtjs.org/docs/2.x/directory-structure/modules
-    */
-    modules: [
-        '@nuxtjs/axios'
-    ]
-
+  /*
+   ** Modules - https://nuxtjs.org/docs/2.x/directory-structure/modules
+   */
+  modules: ['@nuxtjs/axios']
 }

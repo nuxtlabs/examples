@@ -1,16 +1,16 @@
 <template>
   <div>
     <h1>Nuxt Config</h1>
-    <ul v-for="post in posts" :key="post.id">
-      <li>{{post.title}}</li>
+    <ul v-for="mountain in mountains" :key="mountain.slug">
+      <li>{{ post.title }}</li>
     </ul>
   </div>
 </template>
 <script>
 export default {
-	async asyncData ({ $axios, $config }) {
-	    const  posts  = await $axios.$get(`/posts`)
-	    return { posts }
-	}
+  async asyncData({ $axios, $config }) {
+    const mountains = await $axios.$get(`/mountains`)
+    return { mountains }
+  }
 }
 </script>
