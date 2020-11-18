@@ -19,9 +19,20 @@ body {
   margin: 0;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a.nuxt-link-exact-active {
+  color: var(--primary-color);
+}
+
 main {
   margin: 0 auto;
-  margin-top: 25vh;
+  margin-top: 100px;
   margin-bottom: 2rem;
   padding: 0 1rem;
   max-width: 1280px;
