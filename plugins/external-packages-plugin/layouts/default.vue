@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 :root {
   --primary-color: #00c58e;
 }
