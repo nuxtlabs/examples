@@ -1,9 +1,7 @@
 <template>
   <div>
-      <h1>Named Middleware 👻</h1>
-      <button @click="logout">
-        Logout
-      </button>
+    <h1>Named Middleware 👻</h1>
+    <button @click="logout">Logout</button>
   </div>
 </template>
 
@@ -11,10 +9,10 @@
 export default {
   middleware: 'auth',
   methods: {
-    logout () {
+    logout() {
       this.$store.commit('auth/setUser', null)
       this.$store.commit('auth/setPass', null)
-      this.$router.push({name: 'index'})
+      this.$router.push({ name: 'index' })
     }
   }
 }

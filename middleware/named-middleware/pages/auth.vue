@@ -12,27 +12,27 @@
   </div>
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        user: {
-          username: '',
-          password: '',
-        },
+export default {
+  data() {
+    return {
+      user: {
+        username: '',
+        password: ''
       }
-    },
-    methods: {
-      login() {
-        this.$store.commit('auth/setUser', this.user.username)
-        this.$store.commit('auth/setPass', this.user.password)
-        this.$router.push({ name: 'named-middleware' })
-      },
-    },
+    }
+  },
+  methods: {
+    login() {
+      this.$store.commit('auth/setUser', this.user.username)
+      this.$store.commit('auth/setPass', this.user.password)
+      this.$router.push({ name: 'named-middleware' })
+    }
   }
+}
 </script>
 <style scoped>
-  div {
-    max-width: 400px;
-    margin: 20px auto;
-  }
+div {
+  max-width: 400px;
+  margin: 20px auto;
+}
 </style>

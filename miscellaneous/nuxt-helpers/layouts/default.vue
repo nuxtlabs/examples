@@ -1,21 +1,5 @@
 <template>
   <div>
-    <nav>
-      <ul>
-        <li>
-          <NuxtLink to="/">Home</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/posts/1">Post</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/posts/54">Error</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/admin">Admin</NuxtLink>
-        </li>
-      </ul>
-    </nav>
     <main>
       <img src="~/assets/logo.svg" />
       <Nuxt />
