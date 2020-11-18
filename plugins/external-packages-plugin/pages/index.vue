@@ -2,7 +2,7 @@
   <div>
     <h1>Plugins External</h1>
     <h2>
-      <NuxtLink to="/mountains/x">➡ Click to see redirected post</NuxtLink>
+      <NuxtLink to="/mountains/x">➡ Click to see axios redirect us</NuxtLink>
     </h2>
     <ul v-for="mountain in mountains" :key="mountain.slug">
       <li>
