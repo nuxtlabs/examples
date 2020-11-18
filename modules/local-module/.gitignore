@@ -14,7 +14,7 @@ dist
 newrelic_agent.log
 .DS_STORE
 .eslintrc
-
+.env
 # docs
 /docs
 
