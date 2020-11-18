@@ -21,6 +21,7 @@ export default {
   methods: {
     changeHelloMessage(event) {
       this.$store.commit('changeHelloValue', event.target.value)
+      console.log(event.target.value)
       event.target.value = ''
     }
   },

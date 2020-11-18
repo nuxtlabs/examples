@@ -16,3 +16,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+p {
+  margin: 20px auto;
+  max-width: 600px;
+}
+</style>
