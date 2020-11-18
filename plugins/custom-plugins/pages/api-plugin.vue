@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1>Posts</h1>
-    <p>List of posts coming from our API Plugin:</p>
-    <ul v-for="post in posts" :key="post.id">
+    <h1>Mountains</h1>
+    <p>List of mountains coming from our API Plugin:</p>
+    <ul v-for="mountain in mountains" :key="mountain.slug">
       <li>
-        {{ post.title }}
+        {{ mountain.title }}
       </li>
     </ul>
   </div>
@@ -13,8 +13,8 @@
 <script>
 export default {
   async asyncData({ app }) {
-    const posts = await app.$nuxtApi('posts')
-    return { posts }
+    const mountains = await app.$nuxtApi('mountains')
+    return { mountains }
   }
 }
 </script>
