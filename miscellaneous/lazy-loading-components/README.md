@@ -1,1 +1,1 @@
-[Features Book - Nuxt Components](https://nuxtjs.org/docs/2.x/features/nuxt-components)
+[Directory Structure Book - Components](https://nuxtjs.org/docs/2.x/directory-structure/components)
