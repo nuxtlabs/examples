@@ -1,0 +1,1 @@
+[Directory Structure Book - Plugins Custom Plugins](https://nuxtjs.org/docs/2.x/directory-structure/plugins#inject-in-root--context)

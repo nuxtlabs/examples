@@ -1,0 +1,1 @@
+[Directory Structure Book - Plugins External](https://nuxtjs.org/docs/2.x/directory-structure/plugins#external-packages)
