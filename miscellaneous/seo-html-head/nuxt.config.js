@@ -3,8 +3,12 @@ export default {
    ** Head Property - https://nuxtjs.org/docs/2.x/features/meta-tags-seo
    */
   head: {
-    title: 'Nuxt.js',
-    titleTemplate: 'My amazing Nuxt.js application | %s',
+    title: 'Nuxt',
+    titleTemplate: 'My amazing Nuxt application | %s',
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    },
     meta: [
       { charset: 'utf-8' },
       {
@@ -22,6 +26,13 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Nunito&display=swap'
+      }
+    ],
+    script: [
+      {
+        src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js',
+        async: true,
+        defer: true
       }
     ]
   }

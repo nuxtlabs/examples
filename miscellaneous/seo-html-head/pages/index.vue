@@ -1,19 +1,33 @@
 <template>
   <div>
-    <h1>Hello Nuxters! 👋</h1>
+    <h1>{{ title }} 👋</h1>
   </div>
 </template>
+
 <script>
 export default {
-  head: {
-    title: 'Home page',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Welcome to Nuxt'
-      }
-    ]
+  data() {
+    return {
+      title: 'Hello Nuxters!'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'The amazing Nuxt application that teaches me all the cool features of Nuxt'
+        }
+      ]
+    }
   }
 }
 </script>
+<style scoped>
+h1 {
+  font-family: Nunito;
+}
+</style>
