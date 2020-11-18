@@ -1,6 +1,11 @@
 export default {
   /*
-   ** importing a custom loader. this will overwrite the default loader
+   ** modifying the default loader
    */
-  loading: '~/components/LoadingBar.vue'
+  loading: {
+    color: 'DodgerBlue',
+    height: '10px',
+    continuous: true,
+    duration: 3000
+  }
 }
