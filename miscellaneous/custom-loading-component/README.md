@@ -1,0 +1,1 @@
+[Features Book - Loading](https://nuxtjs.org/docs/2.x/features/loading)
