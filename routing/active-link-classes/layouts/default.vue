@@ -13,17 +13,20 @@
     <main>
       <img src="~/assets/logo.svg" />
       <Nuxt />
-      <div>
-        <p v-pre>a.nuxt-link-active { font-weight: bold; }</p>
-        <p v-pre>
-          a.nuxt-link-exact-active { color: #00c58e; }
-        </p>
-      </div>
     </main>
   </div>
 </template>
 
 <style>
+/* home route and active route will show in bold as it matches / and /about */
+a.nuxt-link-active {
+  font-weight: bold;
+}
+/* exact link will show the primary color for only the exact matching link */
+a.nuxt-link-exact-active {
+  color: #00c58e;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
@@ -69,12 +72,5 @@ a:hover {
   color: #00c58e;
 }
 
-/* home route and active route will show in bold as it matches / and /about */
-a.nuxt-link-active {
-  font-weight: bold;
-}
-/* exact link will show the primary color for only the exact matching link */
-a.nuxt-link-exact-active {
-  color: #00c58e;
-}
+
 </style>
