@@ -12,15 +12,17 @@ export default function () {
 
   // Start NGROK when Nuxt server is listening
   let url
+  
   nuxt.hook('listen', async function (server, { port }) {
+    
     const options = nuxt.options.ngrok || {}
 
-    const token = process.env.NGROK_TOKEN || options.token
-    await ngrok.authtoken(token)
+    const token = process.env.NGROK_TOKEN || options.authtoken
+    await ngrok.authtoken(token || '')
 
     url = await ngrok.connect(port)
 
-    nuxt.options.publicRuntimeConfig.url = url
+    nuxt.options.publicRuntimeConfig.ngrok = { url }
     nuxt.options.cli.badgeMessages.push(
       `Public URL: ${chalk.underline.yellow(url)}`
     )
