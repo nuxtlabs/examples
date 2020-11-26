@@ -3,8 +3,8 @@ export default {
    ** Head Property - https://nuxtjs.org/docs/2.x/features/meta-tags-seo
    */
   head: {
-    title: 'Nuxt',
-    titleTemplate: 'My amazing Nuxt application | %s',
+    title: 'My amazing Nuxt application',
+    titleTemplate: 'Nuxt | %s',
     meta: [
       { charset: 'utf-8' },
       {
@@ -17,10 +17,15 @@ export default {
         content:
           'The amazing Nuxt.js application that teaches me all the cool features of Nuxt.js'
       },
-      
-      // twitter: https://cards-dev.twitter.com/validator
-      { name: 'twitter:site', content: 'nuxt_js' },
-      { name: 'twitter:card', content: 'summary_large_image' },
+
+      // Twitter
+      // Test on: https://cards-dev.twitter.com/validator
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@nuxt_js' },
       {
         hid: 'twitter:url',
         name: 'twitter:url',
@@ -29,52 +34,63 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Nuxt'
+        content: 'My amazing Nuxt application'
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Nuxt, the intuitive Vue framework'
+        content:
+          'The amazing Nuxt.js application that teaches me all the cool features of Nuxt.js'
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/nuxt.png'
+        content: 'https://nuxtjs.org/nuxt-card.png'
       },
 
-      // opengraph: https://developers.facebook.com/tools/debug/
-      { property: "og:site_name", content: "Nuxt" },
-      { hid: "og:type", property: "og:type", content: "website" },
+      // Open Graph
+      // Test on: https://developers.facebook.com/tools/debug/
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Nuxt' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
       {
-        hid: "og:url",
-        property: "og:url",
-        content: "https://nuxtjs.org",
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://nuxtjs.org'
       },
       {
-        hid: "og:title",
-        property: "og:title",
-        content: "Nuxt",
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'My amazing Nuxt application'
       },
       {
-        hid: "og:description",
-        property: "og:description",
-        content: "Nuxt, the intuitive Vue framework",
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'The amazing Nuxt.js application that teaches me all the cool features of Nuxt.js'
       },
       {
-        hid: "og:image",
-        property: "og:image",
-        content: "/nuxt.png",
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://nuxtjs.org/nuxt-card.png'
       },
-      { property: "og:image:width", content: "740" },
-      { property: "og:image:height", content: "300" },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: 'https://nuxtjs.org/nuxt-card.png'
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'NuxtJS'
+      }
     ],
     // canonical
     link: [
       {
-        hid: "canonical",
-        rel: "canonical",
-        href: `https://nuxtjs.org/examples`,
-      },
-    ],
+        hid: 'canonical',
+        rel: 'canonical',
+        href: `https://nuxtjs.org/examples`
+      }
+    ]
   }
 }

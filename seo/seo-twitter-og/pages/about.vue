@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Hello Nuxters! 👋</h1>
+    <img src="~/assets/logo.svg" />
+    <h1>About Page</h1>
   </div>
 </template>
 <script>

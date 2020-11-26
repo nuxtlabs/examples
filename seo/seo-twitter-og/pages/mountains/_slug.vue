@@ -1,12 +1,9 @@
 <template>
   <article>
-    <TwitterHead
+    <SocialHead
       :title="mountain.title"
       :description="mountain.description"
       :image="mountain.image"
-      :tags="mountain.continent"
-      :created-at="mountain.createdAt"
-      :updated-at="mountain.updatedAt"
     />
     <h1>{{ mountain.title }}</h1>
     <section>
@@ -18,10 +15,10 @@
 </template>
 <script>
 export default {
-  async asyncData({ $http, params }) {
-    const mountain = await $http.$get(
+  async asyncData({ params }) {
+    const mountain = await fetch(
       `https://api.nuxtjs.dev/mountains/${params.slug}`
-    )
+    ).then((res) => res.json())
     return { mountain }
   },
   methods: {
@@ -29,15 +26,15 @@ export default {
       return this.$router.go(-1)
     }
   },
-  head(){
-    return{
+  head() {
+    return {
       link: [
         {
-          hid: "canonical",
-          rel: "canonical",
-          href: `https://nuxtjs.org/mountains/${this.$route.params.slug}`,
-        },
-      ],
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://nuxtjs.org/mountains/${this.$route.params.slug}`
+        }
+      ]
     }
   }
 }

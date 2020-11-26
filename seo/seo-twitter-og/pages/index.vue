@@ -33,8 +33,10 @@ export default {
       ]
     }
   },
-  async asyncData({ $http }) {
-    const mountains = await $http.$get('https://api.nuxtjs.dev/mountains')
+  async asyncData() {
+    const mountains = await fetch(
+      'https://api.nuxtjs.dev/mountains'
+    ).then((res) => res.json())
     return { mountains }
   }
 }
