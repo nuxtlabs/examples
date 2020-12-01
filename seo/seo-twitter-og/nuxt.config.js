@@ -15,7 +15,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'The amazing Nuxt.js application that teaches me all the cool features of Nuxt.js'
+          'The amazing Nuxt application that teaches me all the cool features of Nuxt'
       },
 
       // Twitter
@@ -40,7 +40,7 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'The amazing Nuxt.js application that teaches me all the cool features of Nuxt.js'
+          'The amazing Nuxt application that teaches me all the cool features of Nuxt'
       },
       {
         hid: 'twitter:image',
@@ -66,7 +66,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'The amazing Nuxt.js application that teaches me all the cool features of Nuxt.js'
+          'The amazing Nuxt application that teaches me all the cool features of Nuxt'
       },
       {
         hid: 'og:image',

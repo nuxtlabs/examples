@@ -19,7 +19,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'The amazing Nuxt.js application that teaches me all the cool features of Nuxt.js'
+          'The amazing Nuxt application that teaches me all the cool features of Nuxt'
       }
     ],
     link: [
