@@ -15,7 +15,7 @@
       </div>
     </section>
     <h2>Dyanamic Images</h2>
-    <p v-pre>:src="require(`~/assets/images/${image}.jpg`)"</p>
+    <p v-pre>:src="require(`~/assets/images/${image}.jpg`)"</p> // can not be use in nuxt 3
     <section>
       <div v-for="image in images" :key="image">
         {{ item }}
